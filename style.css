@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    background-color: #f3f3f0bb;
+    position: fixed;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    top:0;
+    width: 100vw;
+    z-index: 3;
+}
+nav ul{
+    list-style: none;
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(3,auto);
+    gap: 5px;
+    align-items: center;
+    margin: 0 1rem;
+}
+nav li{
+    padding: 15px 1.2rem;
+    position: relative;
+    transition: 1s;
+}
+nav li, li a {
+    color: #222222;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+nav h1{
+    display: grid;
+    align-content: center;
+    margin-left: 1rem;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+nav h1 a{
+    text-decoration: none;
+    color: rgb(68, 62, 62);
+}
+nav img{
+    width: 30px;
+}
+
+.menu ul
+{   
+	width: 200px;
+    position: absolute;
+	display:none;
+	border: 1px solid black;
+    background-color: white;
+    top: 3rem;
+}
+.menu .category:hover
+{
+	background-color: #8fc0cf;
+	border: 1px solid #000;
+}
+.menu li:hover ul
+{
+	display: block;
+} 
+.responsive{
+    display: none;
+    
+}
+.click{
+    position: relative;
+}
+.click-menu{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    list-style: none;
+    top: 3rem;
+    right: 3rem;
+    width: 150px;
+    text-align: end;
+    background-color: white;
+}
+
+.click input:checked ~ .click-menu{
+    visibility: visible;
+    opacity: 1;
+}
+.click-menu ul{
+    display: block;
+}
+.sub-menu{
+    position: absolute;
+    right: 5rem;
+    text-align: start;    
+}
+
+.main-image{
+    background-image: url('/images/photo.jpg');
+    background-size: cover;
+    background-position: 25% 70%;
+    height: 100vh;position: relative;
+    
+}
+.main-image .title{
+    position: absolute;
+    top: 13rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+.title h2{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #e4ad6fdd;
+    margin-bottom: 1rem;
+}
+.title a{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: rgb(219, 158, 79);
+    font-variant: small-caps;
+    text-decoration: underline;
+}
+.product-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(300px,100%),1fr));
+    gap: 4rem;
+    margin: 3rem 5rem;
+
+}
+.product-1{
+    background-image: url('https://static.zara.net/photos///2021/I/1/1/p/1262/810/070/2/w/1920/1262810070_6_1_1.jpg?ts=1634570834847');
+    background-size: cover;
+    height: 350px;
+    background-position:center;
+    position: relative;
+    transition: 1s;
+}
+.product-1:hover{
+    background-image: url('https://static.zara.net/photos///2021/I/1/1/p/1262/810/070/2/w/750/1262810070_6_2_1.jpg?ts=1634570838790');
+}
+.product-2{
+    background-size: cover;
+    height: 350px;
+    background-position:center;
+    background-image: url('https://static.zara.net/photos///2021/I/1/1/p/2231/810/020/2/w/750/2231810020_6_1_1.jpg?ts=1631096039291');
+    position: relative;
+    transition: 1s;
+}
+.product-2:hover{
+    background-image: url('https://static.zara.net/photos///2021/I/1/1/p/2231/810/020/2/w/750/2231810020_6_2_1.jpg?ts=1631013793659');
+}
+.product-3{
+    background-size: cover;
+    height: 350px;
+    background-position:center;
+    background-image: url('https://static.zara.net/photos///2021/I/1/1/p/3210/810/001/2/w/750/3210810001_6_1_1.jpg?ts=1629791406126');
+    position: relative;
+    transition: 1s;
+}
+.product-3:hover{
+    background-image: url('https://static.zara.net/photos///2021/I/1/1/p/3210/810/001/2/w/750/3210810001_6_2_1.jpg?ts=1629791407992');
+}
+.product-card h2{
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 3rem 0;
+    font-family: sans-serif;
+}
+.product-card span{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+}
+.product-card a{
+    text-decoration: none;
+    color: rgb(51, 48, 48);
+}
+.product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.product-image{
+    background-image: url('https://static.zara.net/photos///2021/I/1/1/p/1260/810/040/2/w/750/1260810040_2_1_1.jpg?ts=1634740260175');
+    height: 500px;
+    background-size: cover;
+}
+
+.quote{
+    display: grid;
+    place-items: center;
+    background-color: #f8f8f8;
+    font-family: sans-serif;
+    padding: 3rem;
+    color: rgb(65, 63, 63);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+footer{
+    background-color: #222222;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 2fr;
+    color: white;
+    
+}
+footer ul{
+    list-style: none;
+    margin: 0.3rem 1rem;
+    margin-bottom: 1rem;
+}
+footer li{
+    padding: 0.5rem;
+    
+}
+footer li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+footer li a:hover{
+    text-decoration: underline;
+}
+.social-media img{
+    width: 30px;
+}
+.social-media{
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+.social-media li{
+    display: inline;
+    padding: 0.5rem;
+}
+.subscribe{
+    padding: 0 1rem;
+}
+.subscribe h4{
+    padding: 0.8rem 0;
+    font-size:  1rem 0.3rem;
+}
+.subscribe input[type="email"]{
+    display: inline;
+    width: 100%;
+    background-color: transparent;
+    padding: 0.3rem 5px;
+    border: none;
+    border-bottom:1px solid white;
+    color: white;
+}
+input[type="submit"]{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.submit-button{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+input:focus{
+    outline: none;
+}
+
+video{
+    width: 100%;
+    height: 100%;   
+    object-fit: cover;
+}
+.video{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+    gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.text{
+    display: grid;
+    place-items: center;
+    padding: 3rem;
+    line-height: 1.7rem;
+    background-color: #f8f8f8;
+    color: rgb(65, 63, 63);
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight:400;
+}
+.new-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 6rem;
+}
+
+.arrivals{
+    background-image: url('/images/product.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-top: 3rem;
+    transition: 1s;
+}
+a{
+    text-decoration: none;
+}
+h3 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+.materials{
+    background-image: url('/images/product2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    transition: 1s;
+}
+.materials:hover, .arrivals:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:700px){
+    .responsive{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    
+   footer{
+       grid-template-columns: 2fr 1fr;
+   }
+   .video{
+       grid-template-columns: 1fr;
+   }
+   .product{
+       grid-template-columns: 1fr;
+   }
+   .new-products{
+       grid-template-columns: 1fr;
+   }
+} 

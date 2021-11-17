@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+nav{
+    background-color: #f3f3f0bb ;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    left: 0;
+    right: 0;
+}
+nav ul{
+    list-style: none;
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(3,auto);
+    gap: 5px;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+nav li{
+    padding: 15px 1.2rem;
+    position: relative;
+    transition: 1s;
+}
+nav li, li a {
+    color: #222222;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+nav h1{
+    display: grid;
+    align-content: center;
+    margin-left: 1rem;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+nav h1 a{
+    text-decoration: none;
+    color: rgb(68, 62, 62);
+}
+nav img{
+    width: 30px;
+}
+.responsive{
+    display: none;
+}
+.menu ul
+{   
+	width: 200px;
+    position: absolute;
+	display:none;
+	border: 1px solid black;
+    background-color: white;
+    top: 3rem;
+}
+.menu .category:hover
+{
+	background-color: #8fc0cf;
+	border: 1px solid #000;
+}
+.menu li:hover ul
+{
+	display: block;
+} 
+.click{
+    position: relative;
+}
+.click-menu{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    list-style: none;
+    top: 3rem;
+    right: 3rem;
+    width: 150px;
+    text-align: end;
+    background-color: white;
+}
+
+.click input:checked ~ .click-menu{
+    visibility: visible;
+    opacity: 1;
+}
+.click-menu ul{
+    display: block;
+}
+.sub-menu{
+    position: absolute;
+    right: 5rem;
+    text-align: start;    
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    background-color:#f3f3f0 ;
+}
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 7rem;
+    margin-top: 5rem;
+}
+
+.caption {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    text-align: end;
+    gap: 10px;
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+}
+.item{
+    text-align: start;
+}
+.product-info{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    gap: 10px;
+    padding: 0.5rem;
+    justify-items: end;
+    border-bottom: 1px solid black;
+}
+.description{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    text-align: start;
+    
+}
+.description img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: 50% 70%;
+}
+input[type=number]{
+    width: 40px;
+    height: 20px;
+    text-align: end;
+    background-color: transparent;
+    border: 1px solid black;
+}
+button {
+    width: 30px;
+    height: 27px;
+    background-color: transparent;
+    border: none;
+}
+.total{
+    text-align: end;
+}
+.checkout{
+    
+    padding-top: 2rem;
+    text-align: end;
+}
+.checkout input[type="button"]{
+    background-color: transparent;
+    padding: 1rem 3rem;
+    border: 2px solid rgb(121, 119, 119);
+    border-radius: 20px;
+}
+button .icon{
+    width: 30px;
+    height: 25px;
+}
+.description span{
+    display: block;
+    padding: 5px;
+}
+footer{
+    background-color: #222222;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 2fr;
+    color: white;
+    
+}
+footer ul{
+    list-style: none;
+    margin: 0.3rem 1rem;
+    margin-bottom: 1rem;
+}
+footer li{
+    padding: 0.5rem;
+    
+}
+footer li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+footer li a:hover{
+    text-decoration: underline;
+}
+.social-media img{
+    width: 30px;
+}
+.social-media{
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+.social-media li{
+    display: inline;
+    padding: 0.5rem;
+}
+.subscribe{
+    padding: 0 1rem;
+}
+.subscribe h4{
+    padding: 0.8rem 0;
+    font-size:  1rem 0.3rem;
+}
+.subscribe input[type="email"]{
+    display: inline;
+    width: 100%;
+    background-color: transparent;
+    padding: 0.3rem 5px;
+    border: none;
+    border-bottom:1px solid white;
+    color: white;
+}
+input[type="submit"]{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.submit-button{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+input:focus{
+    outline: none;
+}
+@media screen and (max-width:790px){
+    .responsive{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    footer{
+       display: grid;
+       grid-template-columns: 2fr 1fr;
+    }
+    .description img{
+        display: none;
+    }
+} 

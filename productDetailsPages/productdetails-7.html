@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="details.css">
+    <style>
+        .product-image{
+            background-image: url('https://static.zara.net/photos///2021/I/1/1/p/1224/810/117/2/w/750/1224810117_1_1_1.jpg?ts=1630583934635');
+            background-size: cover;
+            background-position:bottom;
+        }
+        
+        .natural{
+            background-color: rgb(247, 247, 165);
+            width: 30px;
+            height: 30px;
+            border: none;
+            border-radius: 50px;
+        }
+        .black{
+            background-color: black;
+            width: 30px;
+            height: 30px;
+            border: none;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="desktop">
+        <nav>
+            <h1> <a href="/index.html"> WALK-IN STYLE</a></h1>
+            <ul class="menu">
+                <li>SHOP
+                  <ul >
+                    <li class="category"><a href="/productlist.html">High Heels</a></li>
+                    <li class="category" ><a href="/productlist.html">Trainers</a></li>
+                    <li class="category" ><a href="/productlist.html">Boots</a></li>
+                    </ul></li>
+                <li><a href="/signin.html"><img src="/images/profile.svg" alt=""></a></li>
+                <li><a href="/cart.html"><img src="/images/bag.svg" alt=""></a></li>
+            </ul>
+        </nav>
+    </header> 
+    <header class="responsive">
+        <nav>
+            <h1> <a href="/index.html"> WALK-IN STYLE</a></h1>
+            <label class="click">
+            <ul>
+              <li><img src="/images/menu.svg" alt="">
+              </li>
+            </ul>
+            <input type="checkbox" hidden>
+            <div class="click-menu">
+                <ul class="menu">
+                    <li>SHOP
+                      <ul  class="sub-menu">
+                        <li class="category"><a href="/productlist.html">High Heels</a></li>
+                        <li class="category" ><a href="/productlist.html">Trainers</a></li>
+                        <li class="category" ><a href="/productlist.html">Boots</a></li>
+                        </ul></li>
+                    <li><a href="/signin.html"><img src="/images/profile.svg" alt=""></a></li>
+                    <li><a href="/cart.html"><img src="/images/bag.svg" alt=""></a></li>
+                </ul>
+            </div>
+            </label>
+            </nav>
+    </header>
+
+    <main>
+        <div class="product">
+            <div class="product-image">
+            </div>                
+            <div class="images">
+                <img src="https://static.zara.net/photos///2021/I/1/1/p/1224/810/117/2/w/750/1224810117_6_1_1.jpg?ts=1629706792416" alt="" >
+                <img src="https://static.zara.net/photos///2021/I/1/1/p/1224/810/117/2/w/750/1224810117_6_2_1.jpg?ts=1629706797077" alt="" >
+                <img src="https://static.zara.net/photos///2021/I/1/1/p/1224/810/117/2/w/750/1224810117_6_3_1.jpg?ts=1629706801606" alt="" >
+                <img src="https://static.zara.net/photos///2021/I/1/1/p/1224/810/117/2/w/750/1224810117_6_4_1.jpg?ts=1629706799323" alt="" >
+            </div>
+        </div>
+        <div class="product-detail">
+            <h2>METALLIC HEELED SLINGBACK SHOES</h2>
+            <p> Faux Patent High-Heel Court Shoes. Side Vents.Pointed Toe. </p>
+            <span>48$</span>
+            <h3>Color:</h3>
+            <button class="natural"></button>
+            <button class="black"></button> 
+            <label> Choose your size:
+                <select name="size">
+                    <option value="size-36">36</option>
+                    <option value="size-37">37</option>
+                    <option value="size-38">38</option>
+                    <option value="size-39">39</option>
+                    <option value="size-40">40</option>
+                    <option value="size-41">41</option>
+                    <option value="size-42">42</option>
+                </select>
+            </label>
+            <button type="submit" class="add-to-cart"><a href="/cart.html">Add to Cart</a> </button>
+                
+            
+        </div>
+        <section class="review">
+            <h3>Write a review</h3>
+            <form>
+                <label for="name">Username</label>
+                <label for="email"> Email</label>
+                <input type="text" id="name" required>
+                <input type="email" id="email" required>
+                <label id="text-label" for="experience">How was your experience?</label>
+                <textarea rows="3" id="experience" required></textarea>
+                <input type="submit" value="SUBMIT">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul >
+            <li><a href="/signin.html"> Account</a></li>
+            <li><a href="/productlist.html"> Shop</a></li>
+            <li><a href="/cart.html">Cart </a></li>
+            <li><a href="#">About</a> </li>
+            <li><a href="#"> Contact Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="#"> Privacy Policy</a></li>
+            <li><a href="#"> Terms of Service</a></li>
+            <li><a href="#"> Refund Policy</a></li>
+            <li><a href="#"> Shipping & Returns</a></li>
+        </ul>
+        <div class="subscribe">
+            <h4>Subscribe to receive $50 off your first order and receive updates,special offers and more.</h4>
+            <form class="submit-button">
+            <input type="email" placeholder="Email address" required>
+            <input type="submit" value="SUBMIT"></form>
+            <div class="social-media">
+                <h5>Follow us on:</h5>
+                <ul>
+                    <li><a href="#"><img src="/images/facebook.svg" alt=""></a></li>
+                    <li><a href="#"><img src="/images/twitter.svg" alt=""></a></li>
+                    <li><a href="#"><img src="/images/pinterest.svg" alt=""></a></li>
+                    <li><a href="#"><img src="/images/linkedin.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
